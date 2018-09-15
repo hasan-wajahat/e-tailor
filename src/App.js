@@ -1,13 +1,12 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './containers/home/HomeContainer';
 
 const App = () => (
   <div className="App">
-    <header className="App-header">
-      <h1 className="App-title">Welcome to React</h1>
-    </header>
-    <p className="App-intro">
-      Start of the app
-    </p>
+    <Router>
+      <Route exact path="/" component={Home} />
+    </Router>
   </div>
 );
 

@@ -46,8 +46,8 @@ const Banner = ({ classes }) => (
 
 Banner.propTypes = {
   classes: PropTypes.shape({
-    banner: PropTypes.object,
-    textContainer: PropTypes.object,
+    banner: PropTypes.string,
+    textContainer: PropTypes.string,
   }).isRequired,
 };
 
